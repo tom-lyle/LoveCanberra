@@ -19,58 +19,66 @@ const week: DayPlan[] = [
         day: 'SUN',
         date: '26',
         events: [
-            { name: 'Opening Gathering', details: 'Kick-off meeting at 9 AM' },
-            { name: 'City Tour', details: 'Explore Canberra landmarks' }
+            { name: 'Opening event', details: 'Kick-off meeting at 6pm' }
         ],
     },
     {
         day: 'MON',
         date: '27',
         events: [
-            { name: 'Workshop', details: 'Morning workshop on community building' },
-            { name: 'Picnic', details: 'Afternoon picnic in the park' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'Serve', details: 'To be determined' },
+            { name: 'Equip', details: 'To be determined'}
         ],
     },
     {
         day: 'TUE',
         date: '28',
         events: [
-            { name: 'Networking Lunch', details: 'Meet local leaders at noon' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'Serve', details: 'To be determined' },
+            { name: 'Equip', details: 'To be determined'}
         ],
     },
     {
         day: 'WED',
         date: '29',
         events: [
-            { name: 'Volunteer Day', details: 'Community service projects all day' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'Serve', details: 'To be determined' },
+            { name: 'Equip', details: 'To be determined'}
         ],
     },
     {
         day: 'THU',
         date: '30',
         events: [
-            { name: 'Free Day', details: 'Explore the city on your own' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'REACH', details: 'To be determined' }
         ],
     },
     {
         day: 'FRI',
         date: '31',
         events: [
-            { name: 'Halloween Party', details: 'Costume party at 7 PM' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'REACH', details: 'To be determined' }
         ],
     },
     {
         day: 'SAT',
         date: '1',
         events: [
-            { name: 'Closing Ceremony', details: 'Wrap-up event and dinner' }
+            { name: 'worship + prayer', details: 'To be determined' },
+            { name: 'REACH', details: 'To be determined' },
+            { name: "celebration", details: "TBD"}
         ],
     },
     {
         day: 'SUN',
         date: '2',
         events: [
-            { name: 'Departure', details: 'Farewell breakfast and goodbyes' }
+            { name: 'Serve the Church', details: 'TBD' }
         ],
     },
 ];
