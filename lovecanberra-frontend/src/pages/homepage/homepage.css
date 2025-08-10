@@ -52,3 +52,9 @@
     cursor: pointer;
 }
 
+@media (prefers-color-scheme: dark) {
+    .day {
+        border-color: #555;
+    }
+}
+
