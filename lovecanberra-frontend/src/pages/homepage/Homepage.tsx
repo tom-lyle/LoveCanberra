@@ -85,9 +85,8 @@ export default function Homepage() {
                         <div className="day" key={date}>
                             <h3>{`${day} ${date}`}</h3>
                             {events.map((event, index) => (
-                                <div className="event" key={index}>
+                                <div className="event" key={index} title={event.details}>
                                     <span className="event-name">{event.name}</span>
-                                    <div className="event-details">{event.details}</div>
                                 </div>
                             ))}
                         </div>
