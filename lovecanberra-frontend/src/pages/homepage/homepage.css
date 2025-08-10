@@ -63,15 +63,7 @@
     pointer-events: none;
 }
 
-@media (prefers-color-scheme: light) {
-    
-}
-
 @media (prefers-color-scheme: dark) {
-    .title-image {
-        /* TODO: modify this so the logo changes to the white text image instead */
-    }
-
     .event-tooltip {
         background-color: antiquewhite;
         color: black;
