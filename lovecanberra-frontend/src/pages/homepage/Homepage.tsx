@@ -1,6 +1,7 @@
 import { useState, type MouseEvent } from 'react';
 import './homepage.css';
-import titleImage from '../../assets/icons/most basic logo-black-text.png'; // need this to be modified so when it is dark mode, it uses the white text image instead, and the black text image when light mode
+import titleImageBlack from '../../assets/icons/most basic logo-black-text.png';
+import titleImageWhite from '../../assets/icons/most basic logo-white-text.png';
 
 interface Event {
     name: string;
@@ -95,7 +96,10 @@ export default function Homepage() {
         <>
             <Navbar />
             <main className="home-main">
-                <img src={titleImage} alt="title" className="title-image" />
+                <picture>
+                    <source srcSet={titleImageWhite} media="(prefers-color-scheme: dark)" />
+                    <img src={titleImageBlack} alt="title" className="title-image" />
+                </picture>
                 <h2 className="subheading">a city wide outreach</h2>
                 <div className="week-container">
                     {week.map(({ day, date, events }) => (
