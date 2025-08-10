@@ -1,3 +1,4 @@
+import { useState, type MouseEvent } from 'react';
 import './homepage.css';
 import titleImage from '../../assets/icons/most basic logo-black-text.png';
 
@@ -74,6 +75,22 @@ const week: DayPlan[] = [
 ];
 
 export default function Homepage() {
+    const [tooltip, setTooltip] = useState<{
+        text: string;
+        x: number;
+        y: number;
+    } | null>(null);
+
+    const showTooltip = (
+        e: MouseEvent<HTMLDivElement>,
+        text: string,
+    ) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        setTooltip({ text, x: rect.left + rect.width / 2, y: rect.bottom });
+    };
+
+    const hideTooltip = () => setTooltip(null);
+
     return (
         <>
             <Navbar />
@@ -85,13 +102,26 @@ export default function Homepage() {
                         <div className="day" key={date}>
                             <h3>{`${day} ${date}`}</h3>
                             {events.map((event, index) => (
-                                <div className="event" key={index} title={event.details}>
+                                <div
+                                    className="event"
+                                    key={index}
+                                    onMouseEnter={(e) => showTooltip(e, event.details)}
+                                    onMouseLeave={hideTooltip}
+                                >
                                     <span className="event-name">{event.name}</span>
                                 </div>
                             ))}
                         </div>
                     ))}
                 </div>
+                {tooltip && (
+                    <div
+                        className="event-tooltip"
+                        style={{ top: tooltip.y, left: tooltip.x }}
+                    >
+                        {tooltip.text}
+                    </div>
+                )}
             </main>
         </>
     );
