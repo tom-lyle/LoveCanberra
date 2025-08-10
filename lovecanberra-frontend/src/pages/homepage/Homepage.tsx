@@ -16,7 +16,7 @@ interface DayPlan {
 
 const week: DayPlan[] = [
     {
-        day: 'Sun',
+        day: 'SUN',
         date: '26',
         events: [
             { name: 'Opening Gathering', details: 'Kick-off meeting at 9 AM' },
@@ -24,7 +24,7 @@ const week: DayPlan[] = [
         ],
     },
     {
-        day: 'Mon',
+        day: 'MON',
         date: '27',
         events: [
             { name: 'Workshop', details: 'Morning workshop on community building' },
@@ -32,42 +32,42 @@ const week: DayPlan[] = [
         ],
     },
     {
-        day: 'Tue',
+        day: 'TUE',
         date: '28',
         events: [
             { name: 'Networking Lunch', details: 'Meet local leaders at noon' }
         ],
     },
     {
-        day: 'Wed',
+        day: 'WED',
         date: '29',
         events: [
             { name: 'Volunteer Day', details: 'Community service projects all day' }
         ],
     },
     {
-        day: 'Thu',
+        day: 'THU',
         date: '30',
         events: [
             { name: 'Free Day', details: 'Explore the city on your own' }
         ],
     },
     {
-        day: 'Fri',
+        day: 'FRI',
         date: '31',
         events: [
             { name: 'Halloween Party', details: 'Costume party at 7 PM' }
         ],
     },
     {
-        day: 'Sat',
+        day: 'SAT',
         date: '1',
         events: [
             { name: 'Closing Ceremony', details: 'Wrap-up event and dinner' }
         ],
     },
     {
-        day: 'Sun',
+        day: 'SUN',
         date: '2',
         events: [
             { name: 'Departure', details: 'Farewell breakfast and goodbyes' }
@@ -104,17 +104,19 @@ export default function Homepage() {
                 <div className="week-container">
                     {week.map(({ day, date, events }) => (
                         <div className="day" key={date}>
-                            <h3>{`${day} ${date}`}</h3>
-                            {events.map((event, index) => (
-                                <div
-                                    className="event"
-                                    key={index}
-                                    onMouseEnter={(e) => showTooltip(e, event.details)}
-                                    onMouseLeave={hideTooltip}
-                                >
-                                    <span className="event-name">{event.name}</span>
-                                </div>
-                            ))}
+                            <h3 className='day-header'><span className='day-of-week'>{`${day}`}</span> <span className='date-of-day'>{` ${date}`}</span></h3>
+                            <div className='event-collection'>
+                                {events.map((event, index) => (
+                                    <div
+                                        className="event"
+                                        key={index}
+                                        onMouseEnter={(e) => showTooltip(e, event.details)}
+                                        onMouseLeave={hideTooltip}
+                                    >
+                                        <span className="event-name">{event.name}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     ))}
                 </div>
