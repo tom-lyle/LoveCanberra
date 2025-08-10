@@ -1,5 +1,5 @@
 import './homepage.css';
-import titleImage from '../../assets/react.svg';
+import titleImage from '../../assets/icons/most basic logo-black-text.png';
 
 interface Event {
     name: string;
@@ -14,7 +14,7 @@ interface DayPlan {
 
 const week: DayPlan[] = [
     {
-        day: 'Sat',
+        day: 'Sun',
         date: 'Oct 26',
         events: [
             { name: 'Opening Gathering', details: 'Kick-off meeting at 9 AM' },
@@ -22,7 +22,7 @@ const week: DayPlan[] = [
         ],
     },
     {
-        day: 'Sun',
+        day: 'Mon',
         date: 'Oct 27',
         events: [
             { name: 'Workshop', details: 'Morning workshop on community building' },
@@ -30,42 +30,42 @@ const week: DayPlan[] = [
         ],
     },
     {
-        day: 'Mon',
+        day: 'Tue',
         date: 'Oct 28',
         events: [
             { name: 'Networking Lunch', details: 'Meet local leaders at noon' }
         ],
     },
     {
-        day: 'Tue',
+        day: 'Wed',
         date: 'Oct 29',
         events: [
             { name: 'Volunteer Day', details: 'Community service projects all day' }
         ],
     },
     {
-        day: 'Wed',
+        day: 'Thu',
         date: 'Oct 30',
         events: [
             { name: 'Free Day', details: 'Explore the city on your own' }
         ],
     },
     {
-        day: 'Thu',
+        day: 'Fri',
         date: 'Oct 31',
         events: [
             { name: 'Halloween Party', details: 'Costume party at 7 PM' }
         ],
     },
     {
-        day: 'Fri',
+        day: 'Sat',
         date: 'Nov 1',
         events: [
             { name: 'Closing Ceremony', details: 'Wrap-up event and dinner' }
         ],
     },
     {
-        day: 'Sat',
+        day: 'Sun',
         date: 'Nov 2',
         events: [
             { name: 'Departure', details: 'Farewell breakfast and goodbyes' }
@@ -79,7 +79,7 @@ export default function Homepage() {
             <Navbar />
             <main className="home-main">
                 <img src={titleImage} alt="title" className="title-image" />
-                <h2 className="subheading">Weekly Plan</h2>
+                <h2 className="subheading">a city wide outreach</h2>
                 <div className="week-container">
                     {week.map(({ day, date, events }) => (
                         <div className="day" key={date}>

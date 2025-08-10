@@ -1,7 +1,6 @@
 .navbar {
     position: relative;
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
 }
 
 .nav-center {
@@ -22,7 +21,7 @@
 .title-image {
     display: block;
     margin: 2rem auto 1rem auto;
-    max-width: 200px;
+    width: 10%;
 }
 
 .subheading {
