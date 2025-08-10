@@ -55,7 +55,8 @@
     text-align: left;
     align-content: left;
     overflow: hidden;
-
+    display: flex;
+    align-items: flex-start;
 }
 
 .day-of-week {
@@ -67,7 +68,8 @@
     font-family: "Reenie Beanie", cursive;
     font-weight: 900;
     font-size: 72px;
-    position: absolute;
+    line-height: 1;
+    margin-left: 0.2rem;
 }
 
 .event-collection {
