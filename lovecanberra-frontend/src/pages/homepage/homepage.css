@@ -52,6 +52,11 @@
     cursor: pointer;
 }
 
+@media (prefers-color-scheme: dark) {
+    .day {
+        border-color: #555;
+    }
+}
 
 .event-tooltip {
     position: fixed;
