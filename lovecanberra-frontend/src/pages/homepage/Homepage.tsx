@@ -1,6 +1,6 @@
 import { useState, type MouseEvent } from 'react';
 import './homepage.css';
-import titleImage from '../../assets/icons/most basic logo-black-text.png';
+import titleImage from '../../assets/icons/most basic logo-black-text.png'; // need this to be modified so when it is dark mode, it uses the white text image instead, and the black text image when light mode
 
 interface Event {
     name: string;
@@ -16,7 +16,7 @@ interface DayPlan {
 const week: DayPlan[] = [
     {
         day: 'Sun',
-        date: 'Oct 26',
+        date: '26',
         events: [
             { name: 'Opening Gathering', details: 'Kick-off meeting at 9 AM' },
             { name: 'City Tour', details: 'Explore Canberra landmarks' }
@@ -24,7 +24,7 @@ const week: DayPlan[] = [
     },
     {
         day: 'Mon',
-        date: 'Oct 27',
+        date: '27',
         events: [
             { name: 'Workshop', details: 'Morning workshop on community building' },
             { name: 'Picnic', details: 'Afternoon picnic in the park' }
@@ -32,42 +32,42 @@ const week: DayPlan[] = [
     },
     {
         day: 'Tue',
-        date: 'Oct 28',
+        date: '28',
         events: [
             { name: 'Networking Lunch', details: 'Meet local leaders at noon' }
         ],
     },
     {
         day: 'Wed',
-        date: 'Oct 29',
+        date: '29',
         events: [
             { name: 'Volunteer Day', details: 'Community service projects all day' }
         ],
     },
     {
         day: 'Thu',
-        date: 'Oct 30',
+        date: '30',
         events: [
             { name: 'Free Day', details: 'Explore the city on your own' }
         ],
     },
     {
         day: 'Fri',
-        date: 'Oct 31',
+        date: '31',
         events: [
             { name: 'Halloween Party', details: 'Costume party at 7 PM' }
         ],
     },
     {
         day: 'Sat',
-        date: 'Nov 1',
+        date: '1',
         events: [
             { name: 'Closing Ceremony', details: 'Wrap-up event and dinner' }
         ],
     },
     {
         day: 'Sun',
-        date: 'Nov 2',
+        date: '2',
         events: [
             { name: 'Departure', details: 'Farewell breakfast and goodbyes' }
         ],
