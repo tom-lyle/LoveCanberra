@@ -1,4 +1,4 @@
-import { useState, MouseEvent } from 'react';
+import { useState, type MouseEvent } from 'react';
 import './homepage.css';
 import titleImage from '../../assets/icons/most basic logo-black-text.png';
 
